@@ -20,7 +20,7 @@ def save(result):
     except:
         print("failed!")
     cur = connect.cursor()
-    cur.execute('create table if not exists codes(code char(20) primary key)')
+    cur.execute('create table if not exists codes(code char(200) primary key)')
     for item in result:
         cur.execute('insert into codes values (?)', [item])
     print("success!")
