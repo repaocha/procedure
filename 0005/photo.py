@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 
 #你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone7P 分辨率(1920*1080)的大小。
+
 from PIL import Image
 import glob,os
 
