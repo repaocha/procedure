@@ -1,4 +1,6 @@
 #-*- coding:utf-8 -*-
+
+#将0001题生成的200个激活码保存到MySQL关系型数据库中.
 import uuid
 import sqlite3
 
