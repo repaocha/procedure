@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
 
+#你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone7P 分辨率(1920*1080)的大小。
 from PIL import Image
 import glob,os
 
@@ -11,13 +12,13 @@ def resize():
             im=Image.open(files)
 
             w,h=im.size
-            if w>640:
-                x=w/640.0
-                w=640
+            if w>1080:
+                x=w/1080.0
+                w=1080
                 h=int(h/x)
-            if h>1136:
-                x=h/1136.0
-                h=1136
+            if h>1920:
+                x=h/1920.0
+                h=1920
                 w=int(w/x)
             print(w,h)
             im0=im.resize((w,h),Image.ANTIALIAS)  #改变尺寸后的图片
